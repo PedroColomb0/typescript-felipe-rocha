@@ -26,9 +26,22 @@ const productId2: string | number = 2
 //Enum
 enum Direction{
     Up = 1,
-    Down = 2
+    Down = 2,
+    Left = 'Esquerda',
+    Right = 'Direita'
 }
 
 const direction = Direction.Up
+
+// Type Assertions
+
+const productName: any = "Boné"
+
+// let itemId = productName as string
+let itemId = <string>productName
+
+
+// 
+
 
 console.log(age);
